@@ -32,7 +32,7 @@ const displayController = (() => {
 
     // create div for main-content section
     const mainContent = document.createElement('div');
-    mainContent.setAttribute('id', 'main-content');
+    mainContent.setAttribute('id', 'main-content-container');
     content.appendChild(mainContent);
 
     const displayPage = (page) => {
@@ -57,6 +57,13 @@ const displayController = (() => {
 
 
 
-    // TO DO - Create footer design
+    // TO DO - Create footer layout
+    const footer = document.createElement('div');
+    footer.setAttribute('id', 'footer');
+    const footerHeading = document.createElement('h3');
+    footerHeading.textContent = 'charles-lao © 2023'
+
+    footer.appendChild(footerHeading);
+    content.appendChild(footer);
 })();
 

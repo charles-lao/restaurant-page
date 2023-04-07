@@ -2,8 +2,14 @@ const displayHome = () => {
     // const mainContentContainer = document.querySelector("#main-content");
 
     const mainContent = document.createElement("div");
-    mainContent.textContent = 'This is the main content from home.js';
+    mainContent.setAttribute('id', 'main-content');
 
+    const mainContentH1 = document.createElement('h1');
+    mainContentH1.textContent = 'RESTO RANCH';
+
+
+
+    mainContent.appendChild(mainContentH1);
     return mainContent;
 };
 

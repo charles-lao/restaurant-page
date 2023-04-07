@@ -1,3 +1,64 @@
+@font-face {
+    font-family: 'Carrot-Farm';
+    src: url(./fonts/CarrotFarm.otf);
+}
+
+* {
+    border: 1px solid red;
+}
+
 #content {
     display: grid;
+    grid-template-rows: 100px minmax(700px, 1fr) 50px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: start;
+    background-image: url('./images/grassy-minimal.png');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+}
+
+
+#header, #main-content, #footer {
+    background-color: #ddd9c9;
+    border-radius: 10px;
+}
+
+#header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+#header li {
+    display: inline;
+}
+
+#main-content-container {
+    display: grid;
+    justify-content: center;
+}
+
+#main-content {
+    width: 600px;
+}
+
+#main-content h1 {
+    font-family: 'Carrot-Farm';
+    font-size: 4rem;
+    color: #cb923c;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
