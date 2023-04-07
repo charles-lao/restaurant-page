@@ -1,10 +1,11 @@
-const displayMenu = () => {
+const displayContact = () => {
+    // const mainContentContainer = document.querySelector("#main-content");
 
     const mainContent = document.createElement("div");
     mainContent.setAttribute('id', 'main-content');
 
     const mainContentH1 = document.createElement('h1');
-    mainContentH1.textContent = 'Menu';
+    mainContentH1.textContent = 'Contact Us';
 
 
 
@@ -12,4 +13,4 @@ const displayMenu = () => {
     return mainContent;
 };
 
-export default displayMenu();
+export default displayContact();

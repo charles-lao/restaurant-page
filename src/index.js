@@ -1,6 +1,8 @@
 import './style.css';
 import './reset-css.css';
 import displayHome from './home';
+import displayMenu from './menu';
+import displayContact from './contact';
 // import Background from './livestock-pattern.jpg';
 
 const displayController = (() => {
@@ -37,7 +39,22 @@ const displayController = (() => {
 
     const displayPage = (page) => {
         // TO DO - Clean up textContent of mainContent then make a switch statement to display the correct page module
-        alert(`display ${ page}`);
+
+        mainContent.textContent = '';
+
+        switch(page) {
+            case 'home':
+                mainContent.appendChild(displayHome);
+                break;
+            case 'menu':
+                mainContent.appendChild(displayMenu);
+                break;
+            case 'contact':
+                mainContent.appendChild(displayContact);
+                break;
+            default:
+                break;
+        };
     }
 
     homeLi.addEventListener('click', (e) => {
@@ -61,7 +78,7 @@ const displayController = (() => {
     const footer = document.createElement('div');
     footer.setAttribute('id', 'footer');
     const footerHeading = document.createElement('h3');
-    footerHeading.textContent = 'charles-lao © 2023'
+    footerHeading.textContent = 'charles-lao © 2023';
 
     footer.appendChild(footerHeading);
     content.appendChild(footer);

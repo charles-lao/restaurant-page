@@ -3,13 +3,15 @@
     src: url(./fonts/CarrotFarm.otf);
 }
 
-* {
-    border: 1px solid red;
+@font-face {
+    font-family: 'Pwficelles';
+    src: url(./fonts/Pwficelles.ttf);
 }
+
 
 #content {
     display: grid;
-    grid-template-rows: 100px minmax(700px, 1fr) 50px;
+    grid-template-rows: 100px minmax(700px, 1fr) 80px;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: start;
@@ -34,12 +36,15 @@
 #header ul {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     
 }
 
 #header li {
     display: inline;
+    font-family: 'Pwficelles';
+    font-size: 2em;
+    color: #cb923c;
 }
 
 #main-content-container {
@@ -48,7 +53,10 @@
 }
 
 #main-content {
-    width: 600px;
+    width: 1200px;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
 }
 
 #main-content h1 {
@@ -58,7 +66,10 @@
 }
 
 #footer {
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Pwficelles';
+    color: #cb923c;
 }
