@@ -1,5 +1,5 @@
-import './style.css';
-import './reset-css.css';
+import "./style.css";
+import "./reset-css.css";
 import displayHome from './home';
 import displayMenu from './menu';
 import displayContact from './contact';
